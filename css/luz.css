@@ -1,0 +1,64 @@
+#luz-titilar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  -webkit-animation-name: luz;
+          animation-name: luz;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes luz {
+  0% {
+    opacity: 0;
+  }
+  4% {
+    opacity: .6;
+  }
+  8% {
+    opacity: .6;
+  }
+  12% {
+    opacity: 0;
+  }
+  14% {
+    opacity: .6;
+  }
+  16% {
+    opacity: .6;
+  }
+  18% {
+    opacity: 0;
+  }
+}
+
+@keyframes luz {
+  0% {
+    opacity: 0;
+  }
+  4% {
+    opacity: .6;
+  }
+  8% {
+    opacity: .6;
+  }
+  12% {
+    opacity: 0;
+  }
+  14% {
+    opacity: .6;
+  }
+  16% {
+    opacity: .6;
+  }
+  18% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=luz.css.map */

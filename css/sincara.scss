@@ -1,0 +1,189 @@
+#sincara {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  
+
+  .body-grey {
+    background-color: rgb(32,33,36);
+    width: 390px;
+    height: 720px;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 6px 15px rgb(44, 44, 44);
+    animation-name: body-sinCara;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+
+    .body-black {
+      background-color: black;
+      width: 310px;
+      height: 720px;
+      border-radius: 60%;
+
+      .cabeza {
+        position: relative;
+        
+        .face-white {
+          position: absolute;
+          top: 25px;
+          right: 52px;
+          background-color: rgb(237,237,221);
+          border-radius: 60%;
+          width: 205px;
+          height: 320px;
+
+          .manchas {
+            position: relative;
+            width: 100px;
+            height: 100px;
+
+            .macha-derecha {
+              position: absolute;
+              top: 60%;
+              right: 35%;
+              width: 0;
+              height: 0;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-bottom: 45px solid rgb(127,113,139);
+              border-radius: 50%;
+              transform: rotate(10deg);
+            }
+
+            .mancha-izquierda {
+              position: absolute;
+              top: 60%;
+              right: -70%;
+              width: 0;
+              height: 0;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-bottom: 45px solid rgb(127,113,139);
+              border-radius: 50%;
+              transform: rotate(-10deg);
+            }
+
+            .mancha-derecha-baja {
+              position: absolute;
+              top: 150%;
+              left: 25%;
+              width: 0;
+              height: 0;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-top: 85px solid rgb(127,113,139);
+              border-radius: 50%;
+            }
+
+            .mancha-izquierda-baja {
+              position: absolute;
+              top: 150%;
+              left: 145%;
+              width: 0;
+              height: 0;
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-top: 85px solid rgb(127,113,139);
+              border-radius: 50%;
+            }
+
+          }
+
+          .eyes  {
+            position: relative;
+            display: flex;
+            align-items: center;
+            .eye1  {
+              position: absolute;
+              top: 15px;
+              right: 25px;
+              background-color: black;
+              width: 40px;
+              height: 25px;
+              border-radius: 70px;
+              transform: rotate(5deg);
+            }
+
+            .eye2 {
+              position: absolute;
+              top: 15px;
+              left: 25px;
+              background-color: black;
+              width: 40px;
+              height: 25px;
+              border-radius: 70px;
+              transform: rotate(-5deg);
+            }
+          }
+
+          .boca {
+            position: absolute;
+            top: 80%;
+            left: 36%;
+            background-color: black;
+            border-radius: 30px;
+            width: 60px;
+            height: 20px;
+          }
+
+          .mancha-boca {
+            position: absolute;
+            top: 82%;
+            left: 40%;
+            clip-path: polygon(70% 0, 77% 49%, 69% 100%, 47% 100%, 57% 49%, 48% 0);
+            background-color: rgb(127,113,139);
+            width: 40px;
+            height: 40px;
+            transform: rotate(90deg);
+            border-radius: 30px;
+          }
+
+        }
+      }
+    }
+  }
+
+  .sombra-piso {
+    background-color: rgb(31,8,11);
+    width: 150px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow:  0 0 15px rgb(31,8,11);
+    opacity: .9;
+    animation-name: sombra;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+  }
+}
+
+
+
+@keyframes body-sinCara {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes sombra {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.33);
+  }
+}
+
