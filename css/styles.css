@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c4c4c4;
+  background-image: url("../tren-chihiro.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.all-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.all-content .body-grey {
+  background-color: #202124;
+  width: 390px;
+  height: 720px;
+  border-radius: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 1px 6px 15px #2c2c2c;
+          box-shadow: 1px 6px 15px #2c2c2c;
+  -webkit-animation-name: body-sinCara;
+          animation-name: body-sinCara;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.all-content .body-grey .body-black {
+  background-color: black;
+  width: 310px;
+  height: 720px;
+  border-radius: 60%;
+}
+
+.all-content .body-grey .body-black .cabeza {
+  position: relative;
+}
+
+.all-content .body-grey .body-black .cabeza .face-white {
+  position: absolute;
+  top: 25px;
+  right: 52px;
+  background-color: #ededdd;
+  border-radius: 60%;
+  width: 205px;
+  height: 320px;
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .manchas {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .manchas .macha-derecha {
+  position: absolute;
+  top: 60%;
+  right: 35%;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 45px solid #7f718b;
+  border-radius: 50%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .manchas .mancha-izquierda {
+  position: absolute;
+  top: 60%;
+  right: -70%;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 45px solid #7f718b;
+  border-radius: 50%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .manchas .mancha-derecha-baja {
+  position: absolute;
+  top: 150%;
+  left: 25%;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 85px solid #7f718b;
+  border-radius: 50%;
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .manchas .mancha-izquierda-baja {
+  position: absolute;
+  top: 150%;
+  left: 145%;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 85px solid #7f718b;
+  border-radius: 50%;
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .eyes {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .eyes .eye1 {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background-color: black;
+  width: 40px;
+  height: 25px;
+  border-radius: 70px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .eyes .eye2 {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  background-color: black;
+  width: 40px;
+  height: 25px;
+  border-radius: 70px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .boca {
+  position: absolute;
+  top: 80%;
+  left: 36%;
+  background-color: black;
+  border-radius: 30px;
+  width: 60px;
+  height: 20px;
+}
+
+.all-content .body-grey .body-black .cabeza .face-white .mancha-boca {
+  position: absolute;
+  top: 82%;
+  left: 40%;
+  -webkit-clip-path: polygon(70% 0, 77% 49%, 69% 100%, 47% 100%, 57% 49%, 48% 0);
+          clip-path: polygon(70% 0, 77% 49%, 69% 100%, 47% 100%, 57% 49%, 48% 0);
+  background-color: #7f718b;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border-radius: 30px;
+}
+
+.all-content .sombra-piso {
+  background-color: #1f080b;
+  width: 150px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px #1f080b;
+          box-shadow: 0 0 15px #1f080b;
+  opacity: .9;
+  -webkit-animation-name: sombra;
+          animation-name: sombra;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.luz-titilar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  -webkit-animation-name: luz;
+          animation-name: luz;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes body-sinCara {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+
+@keyframes body-sinCara {
+  0% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+
+@-webkit-keyframes sombra {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.33);
+            transform: scale(1.33);
+  }
+}
+
+@keyframes sombra {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.33);
+            transform: scale(1.33);
+  }
+}
+
+@-webkit-keyframes luz {
+  0% {
+    opacity: 0;
+  }
+  4% {
+    opacity: .6;
+  }
+  8% {
+    opacity: .6;
+  }
+  12% {
+    opacity: 0;
+  }
+  14% {
+    opacity: .6;
+  }
+  16% {
+    opacity: .6;
+  }
+  18% {
+    opacity: 0;
+  }
+}
+
+@keyframes luz {
+  0% {
+    opacity: 0;
+  }
+  4% {
+    opacity: .6;
+  }
+  8% {
+    opacity: .6;
+  }
+  12% {
+    opacity: 0;
+  }
+  14% {
+    opacity: .6;
+  }
+  16% {
+    opacity: .6;
+  }
+  18% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
